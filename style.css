@@ -47,18 +47,27 @@ a {
 }
 
 ul {
-  list-style: none;
   padding-left: 0;
 }
 
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 /*navbar*/
 #navbar {
   display: flex;
   justify-content: space-between;
-  background: url(imgs/home-background.png) center/cover no-repeat;
+  background: #9cbf8d;
   align-items: center;
   color: var(--color-white);
-  padding: 8px;
+  padding: 4px;
 }
 
 .navbar__logo {
