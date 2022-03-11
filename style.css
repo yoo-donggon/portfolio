@@ -68,6 +68,9 @@ button {
   align-items: center;
   color: var(--color-white);
   padding: 4px;
+  height: 50px;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar__logo {
@@ -75,6 +78,7 @@ button {
   font-weight: var(--weight-semi-bold);
   float: left;
   margin-bottom: auto;
+  margin-left: 15px;
 }
 
 .navbar__menu {
@@ -102,6 +106,7 @@ button {
   background: url(imgs/home-background.png) center/cover no-repeat;
   padding: 40px;
   text-align: center;
+  width: 1200px;
 }
 
 .profile_avatar {
@@ -124,4 +129,25 @@ button {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
+}
+
+/*Section common*/
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  width: 500px;
+}
+
+/*About*/
+#about {
+  margin-top: 300px;
+}
+
+.about_title {
+}
+
+.about_school {
+  size: 30px;
 }
