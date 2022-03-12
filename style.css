@@ -69,8 +69,6 @@ button {
   color: var(--color-white);
   padding: 4px;
   height: 50px;
-  position: fixed;
-  width: 100%;
 }
 
 .navbar__logo {
@@ -104,6 +102,7 @@ button {
 /*profile*/
 #profile {
   background: url(imgs/home-background.png) center/cover no-repeat;
+  border-radius: var(--size-border-radius);
   padding: 40px;
   text-align: center;
   width: 1200px;
@@ -143,9 +142,13 @@ button {
 /*About*/
 #about {
   margin-top: 300px;
+  background-color: #fac1bf;
+  border-radius: var(--size-border-radius);
 }
 
 .about_title {
+  margin-top: auto;
+  font-size: var(--font-large);
 }
 
 .about_school {
@@ -157,11 +160,21 @@ button {
   margin-top: 300px;
 }
 
-.skill_head {
+.skill_title {
+}
+
+.skill_stacks {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.skill_stack {
 }
 
 .skill_icon {
-}
-
-.skill_title {
+  width: 170px;
+  height: 170px;
+  background-color: #616161;
+  font-size: 70px;
 }
