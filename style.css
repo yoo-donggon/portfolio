@@ -136,18 +136,19 @@ button {
   text-align: center;
   max-width: 1200px;
   margin: auto;
-  width: 500px;
+  width: 1000px;
 }
 
 /*About*/
 #about {
   margin-top: 300px;
-  background-color: #fac1bf;
+
   border-radius: var(--size-border-radius);
 }
 
 .about_title {
   margin-top: auto;
+  margin-bottom: 80px;
   font-size: var(--font-large);
 }
 
@@ -161,6 +162,8 @@ button {
 }
 
 .skill_title {
+  margin-top: auto;
+  font-size: var(--font-large);
 }
 
 .skill_stacks {
@@ -168,13 +171,23 @@ button {
   justify-content: space-between;
   margin: 80px 0;
 }
-
-.skill_stack {
-}
-
-.skill_icon {
+.stack_icon {
   width: 170px;
   height: 170px;
-  background-color: #616161;
-  font-size: 70px;
+  line-height: 170px;
+  font-size: 80px;
+  margin: auto;
+  color: #73aace;
+  margin-bottom: 16px;
+}
+.stack_icon:hover i {
+  color: var(--color-pink);
+  transform: scale(1.2);
+}
+.stack_icon i {
+  transition: all var(--animation-duration) ease;
+}
+
+.stack_title {
+  color: rgb(124, 124, 124);
 }
