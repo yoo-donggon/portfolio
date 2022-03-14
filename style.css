@@ -65,11 +65,13 @@ button {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background: var(--color-green);
+  background: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 4px;
   height: 50px;
+  width: 100%;
+  position: fixed;
 }
 
 .navbar__logo {
@@ -105,8 +107,9 @@ button {
   background: url(imgs/home-background.png) center/cover no-repeat;
   border-radius: var(--size-border-radius);
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
-  width: 1200px;
+  width: 100%;
 }
 
 .profile_avatar {
