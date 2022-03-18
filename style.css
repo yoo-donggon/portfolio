@@ -77,7 +77,7 @@ button {
 
 #navbar.navbar--dark {
   background-color: var(--color-green);
-  padding: 5px;
+  padding: 4px;
 }
 
 .navbar__logo {
@@ -104,7 +104,7 @@ button {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-light-grey);
+  background-color: var(--color-blue);
   border-radius: var(--size-border-radius);
 }
 
@@ -137,6 +137,17 @@ button {
   margin: 24px;
   padding: 8px 12px;
   border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+  cursor: pointer;
+}
+
+.profile_contact.activate {
+  border: 1px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+.profile_contact:hover {
+  background-color: var(--color-blue);
   border-radius: var(--size-border-radius);
 }
 
