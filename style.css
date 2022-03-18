@@ -24,7 +24,7 @@
   --font-micro: 14px;
 
   /* Font weight */
-  --weight-bold: 800;
+  --weight-bold: 700;
   --weight-semi-bold: 600;
   --weight-regular: 400;
 
@@ -68,10 +68,16 @@ button {
   background: transparent;
   align-items: center;
   color: var(--color-white);
-  padding: 4px;
+  padding: 8px;
   height: 50px;
   width: 100%;
   position: fixed;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-green);
+  padding: 5px;
 }
 
 .navbar__logo {
@@ -109,7 +115,7 @@ button {
   padding: 40px;
   padding-top: 120px;
   text-align: center;
-  width: 100%;
+  width: 100;
 }
 
 .profile_avatar {
@@ -211,9 +217,11 @@ button {
 
 .project {
   background-color: var(--color-green);
-  padding: 40px 80px;
   border: 1px solid var(--color-green);
   text-align: center;
+  width: 360px;
+  height: 360px;
+  margin-right: 10px;
 }
 
 .project_name {
@@ -234,7 +242,7 @@ button {
 /*contact*/
 #contact {
   background-color: var(--color-green);
-  width: 1200px;
+  width: 100;
   height: 300px;
   margin: auto;
   margin-top: 300px;
