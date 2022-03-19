@@ -23,19 +23,34 @@ navbarMenu.addEventListener('click', (event) => {
     if (link==null) {
         return;
     }
-    scrollIntoView('#contact');
+    scrollIntoView(link);
 });
 
 
 
 
 //Handle click on contact
-const homeContactBtn = document.querySelector('.profile_contact');
-homeContactBtn.addEventListener('click', () =>{
+const profileContactBtn = document.querySelector('.profile_contact');
+profileContactBtn.addEventListener('click', () =>{
     scrollIntoView('#contact');
 });
 
+
+
+//make home fade
+const profile = document.querySelector('.profile__container');
+const profileHeight = profile.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    profile.style.opacity = 1- window.scrollY / profileHeight;
+});
+
+
+
+
+
+
+
 function scrollIntoView(selector){
-    const scrollTo = document.querySelector('#contact');
+    const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView ({behavior: "smooth", block: "center"});
 }
