@@ -62,6 +62,13 @@ button {
   outline: none;
 }
 
+/*section*/
+.section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+
 /*navbar*/
 #navbar {
   display: flex;
@@ -69,12 +76,12 @@ button {
   background: transparent;
   align-items: center;
   color: var(--color-white);
-  padding: 8px;
-  height: 50px;
+  padding: 6px;
   width: 100%;
   overflow-x: auto;
   position: fixed;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -83,7 +90,7 @@ button {
 }
 
 .navbar__logo {
-  font-size: var(--font-medium);
+  font-size: 20px;
   font-weight: var(--weight-semi-bold);
   float: left;
   margin-bottom: auto;
@@ -92,31 +99,41 @@ button {
 
 .navbar__menu {
   display: flex;
+  margin: 0 0;
 }
 
 .navbar__menu__item {
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin: 0 4px;
   cursor: pointer;
   border-radius: var(--size-border-radius);
-  border: solid 1px transparent;
 }
 
+.navbar__menu__item.active {
+  border-radius: var(--size-border-radius);
+  border: 1px solid --color-white;
+}
 .navbar__menu__item:hover {
   background-color: var(--color-pink);
   border-radius: var(--size-border-radius);
   border: solid 1px #eeeeee;
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
 /*profile*/
 #profile {
   background: url(imgs/home-background.png) center/cover no-repeat;
-  border-radius: var(--size-border-radius);
   padding: 40px;
   padding-top: 120px;
   text-align: center;
-  width: 100%;
-  overflow-x: hidden;
 }
 
 .profile_avatar {
@@ -154,21 +171,17 @@ button {
 
 /*About*/
 #about {
-  background-color: var(--color-green);
-  width: 100%;
-  overflow-x: hidden;
-  height: 500px;
-  margin-top: 500px;
-  border-radius: var(--size-border-radius);
+  background-color: var(--color-white);
+  padding: 40px;
+  padding-top: 120px;
   text-align: center;
-  padding: 50px;
 }
 
 .about_title {
   margin-top: auto;
   margin-bottom: 40px;
   font-size: 60px;
-  color: var(--color-white);
+  color: var(--color-green);
 }
 
 .about_image {
@@ -183,18 +196,15 @@ button {
 .about_history {
   text-align: center;
   margin-left: auto;
-  color: var(--color-white);
+  color: var(--color-green);
+  font-size: medium;
 }
 /*Skills*/
 #skills {
   background-color: var(--color-green);
-  width: 100%;
-  overflow-x: hidden;
-  height: 400px;
-  margin-top: 500px;
-  border-radius: var(--size-border-radius);
+  padding: 40px;
+  padding-top: 120px;
   text-align: center;
-  padding: 20px 50px;
 }
 
 .skill_title {
@@ -206,7 +216,7 @@ button {
 
 .skill_stacks {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 50px 0;
 }
 
@@ -233,29 +243,24 @@ button {
 
 /*projects*/
 #projects {
-  background-color: var(--color-green);
-  width: 100%;
-  overflow-x: hidden;
-  height: 250px;
-  margin-top: 500px;
-  border-radius: var(--size-border-radius);
+  background-color: var(--color-white);
+  padding: 40px;
+  padding-top: 120px;
   text-align: center;
-  padding: 50px;
-  padding-top: 15px;
 }
 
 .projects {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .project {
   background-color: var(--color-green);
-  border: 1px solid var(--color-green);
+  border: 1px solid var(--color-white);
   text-align: center;
   width: 360px;
-  height: auto;
-  margin-right: 10px;
+  height: 300px;
+  padding: 30px 0;
 }
 
 .project_name {
@@ -271,16 +276,14 @@ button {
 
 .project_link {
   font-size: 50px;
+  color: var(--color-green);
 }
 
 /*contact*/
 #contact {
   background-color: var(--color-green);
-  width: 100%;
-  height: 450px;
-  margin-top: 500px;
-  border-radius: var(--size-border-radius);
-  padding: 50px;
+  padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -329,4 +332,61 @@ button {
 .arrowup.visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
+    top: 16px;
+    right: 16px;
+    font-size: var(--font-medium);
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--color-green);
+  }
+
+  #navbar.navbar--dark {
+    padding: 6px;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
+
+  .contact__container {
+    padding-top: 0;
+  }
+
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+  }
+
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
+  }
 }
