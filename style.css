@@ -357,11 +357,12 @@ button {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-green);
+    background-color: transparent;
   }
 
   #navbar.navbar--dark {
     padding: 6px;
+    background-color: var(--color-green);
   }
   .navbar__menu {
     flex-direction: column;
