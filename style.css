@@ -61,6 +61,7 @@ button {
   border: none;
   outline: none;
 }
+
 /*navbar*/
 #navbar {
   display: flex;
@@ -71,6 +72,7 @@ button {
   padding: 8px;
   height: 50px;
   width: 100%;
+  overflow-x: auto;
   position: fixed;
   transition: all var(--animation-duration) ease-in-out;
 }
@@ -113,7 +115,8 @@ button {
   padding: 40px;
   padding-top: 120px;
   text-align: center;
-  width: 100;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .profile_avatar {
@@ -149,29 +152,22 @@ button {
   border-radius: var(--size-border-radius);
 }
 
-/*Section common*/
-.section {
-  padding: 50px;
-  text-align: center;
-  max-width: 1200px;
-  margin: auto;
-  width: 1000px;
-}
-
 /*About*/
 #about {
-  margin-top: 300px;
   background-color: var(--color-green);
-  width: 100;
-  height: 600px;
+  width: 100%;
+  overflow-x: hidden;
+  height: 500px;
   margin-top: 500px;
   border-radius: var(--size-border-radius);
+  text-align: center;
+  padding: 50px;
 }
 
 .about_title {
   margin-top: auto;
   margin-bottom: 40px;
-  font-size: 70px;
+  font-size: 60px;
   color: var(--color-white);
 }
 
@@ -191,28 +187,36 @@ button {
 }
 /*Skills*/
 #skills {
-  margin-top: 300px;
+  background-color: var(--color-green);
+  width: 100%;
+  overflow-x: hidden;
+  height: 400px;
+  margin-top: 500px;
+  border-radius: var(--size-border-radius);
+  text-align: center;
+  padding: 20px 50px;
 }
 
 .skill_title {
   margin-top: auto;
   font-size: var(--font-large);
-  color: var(--color-green);
+  color: var(--color-white);
+  text-align: center;
 }
 
 .skill_stacks {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0;
+  margin: 50px 0;
 }
 
 .stack_icon {
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   line-height: 170px;
   font-size: 80px;
   margin: auto;
-  color: var(--color-green);
+  color: var(--color-white);
   margin-bottom: 16px;
 }
 .stack_icon:hover i {
@@ -229,14 +233,20 @@ button {
 
 /*projects*/
 #projects {
-  margin-top: 300px;
-  border-radius: 50%;
+  background-color: var(--color-green);
+  width: 100%;
+  overflow-x: hidden;
+  height: 250px;
+  margin-top: 500px;
+  border-radius: var(--size-border-radius);
+  text-align: center;
+  padding: 50px;
+  padding-top: 15px;
 }
 
 .projects {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  justify-content: space-around;
 }
 
 .project {
@@ -244,7 +254,7 @@ button {
   border: 1px solid var(--color-green);
   text-align: center;
   width: 360px;
-  height: 360px;
+  height: auto;
   margin-right: 10px;
 }
 
@@ -266,26 +276,28 @@ button {
 /*contact*/
 #contact {
   background-color: var(--color-green);
-  width: 100;
+  width: 100%;
   height: 450px;
   margin-top: 500px;
   border-radius: var(--size-border-radius);
+  padding: 50px;
+  text-align: center;
 }
 
 .contact__container {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 70px;
   vertical-align: middle;
 }
 
 .contact_title {
   color: var(--color-white);
-  font-size: 70px;
+  font-size: 60px;
 }
 
 .contact_mail {
   color: var(--color-white);
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .contact_links {
@@ -304,11 +316,11 @@ button {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  font-size: 30px;
-  background-color: var(--color-green);
+  font-size: 20px;
+  background-color: var(--color-light-grey);
   color: #eeeeee;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   opacity: 0;
   transition: all 300ms ease-in;
   border-radius: var(--size-border-radius);
