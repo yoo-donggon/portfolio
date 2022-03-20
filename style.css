@@ -96,16 +96,14 @@ button {
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
-}
-
-.navbar__menu__item.activate {
-  border: 1px solid var(--color-white);
   border-radius: var(--size-border-radius);
+  border: solid 1px transparent;
 }
 
 .navbar__menu__item:hover {
   background-color: var(--color-pink);
   border-radius: var(--size-border-radius);
+  border: solid 1px #eeeeee;
 }
 
 /*profile*/
@@ -232,6 +230,7 @@ button {
 /*projects*/
 #projects {
   margin-top: 300px;
+  border-radius: 50%;
 }
 
 .projects {
@@ -297,4 +296,25 @@ button {
 .contact_rights {
   color: var(--color-white);
   font-size: 15px;
+}
+
+/*arrow*/
+
+.arrowup {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 30px;
+  background-color: var(--color-green);
+  color: #eeeeee;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  transition: all 300ms ease-in;
+  border-radius: var(--size-border-radius);
+}
+
+.arrowup.visible {
+  opacity: 1;
+  pointer-events: auto;
 }

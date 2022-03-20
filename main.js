@@ -46,10 +46,21 @@ document.addEventListener('scroll', () => {
 
 
 
+//show arrow up
+const arrowup = document.querySelector('.arrowup');
+document.addEventListener('scroll', () => {
+    if (window.scrollY > profileHeight / 2){
+        arrowup.classList.add('visible');
+    } else {
+        arrowup.classList.remove('visible');
+    }
+});
 
 
-
-
+//handle click 
+arrowup.addEventListener('click', () => {
+    scrollIntoView('#profile');
+});
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView ({behavior: "smooth", block: "center"});
