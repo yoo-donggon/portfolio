@@ -67,6 +67,7 @@ button {
   padding: 50px;
   text-align: center;
   margin: auto;
+  min-height: 500px;
 }
 
 /*navbar*/
@@ -265,7 +266,7 @@ button {
 
 .project_name {
   color: var(--color-white);
-  font-size: var(--font-medium);
+  font-size: 40px;
   font-weight: var(--weight-bold);
 }
 
@@ -282,8 +283,8 @@ button {
 /*contact*/
 #contact {
   background-color: var(--color-green);
-  padding: 40px;
-  padding-top: 120px;
+  padding: 60px 0;
+  padding-top: 70px;
   text-align: center;
 }
 
@@ -311,6 +312,7 @@ button {
 .contact_rights {
   color: var(--color-white);
   font-size: 15px;
+  padding-top: 80px;
 }
 
 /*arrow*/
