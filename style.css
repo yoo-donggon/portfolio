@@ -388,5 +388,6 @@ button {
     line-height: 50px;
     right: 16px;
     bottom: 16px;
+    padding: 0;
   }
 }
