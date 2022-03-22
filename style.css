@@ -373,6 +373,7 @@ button {
 
   .navbar__menu.open {
     display: block;
+    background-color: var(--color-green);
   }
 
   .contact__container {
