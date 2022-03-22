@@ -357,7 +357,7 @@ button {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: transparent;
+    background-color: var(--color-green);
   }
 
   #navbar.navbar--dark {
