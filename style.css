@@ -68,6 +68,7 @@ button {
   text-align: center;
   margin: auto;
   min-height: 500px;
+  border-radius: 5px;
 }
 
 /*navbar*/
@@ -262,6 +263,7 @@ button {
   width: 360px;
   height: 300px;
   padding: 30px 0;
+  margin: 40px 0;
 }
 
 .project_name {
@@ -277,8 +279,9 @@ button {
 
 .project_link {
   font-size: 50px;
-  color: var(--color-green);
+  color: var(--color-white);
 }
+
 
 /*contact*/
 #contact {
