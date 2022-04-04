@@ -283,6 +283,8 @@ button {
   font-size: 50px;
   color: var(--color-white);
   display: flex;
+  align-items: center;
+  justify-items: center;
   justify-content: space-evenly;
   margin: 50px 0;
 }
