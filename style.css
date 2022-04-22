@@ -85,6 +85,7 @@ button {
   position: fixed;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
+  height: 50px;
 }
 
 #navbar.navbar--dark {
@@ -93,11 +94,13 @@ button {
 }
 
 .navbar__logo {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: var(--weight-semi-bold);
   float: left;
   margin-bottom: auto;
   margin-left: 15px;
+  top: 15px;
+  color: var(--color-grey);
 }
 
 .navbar__menu {
@@ -209,6 +212,7 @@ button {
   padding: 40px;
   padding-top: 120px;
   text-align: center;
+  width: 50vw;
 }
 
 .skill_title {
@@ -256,14 +260,16 @@ button {
 .projects {
   display: grid;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .project {
   background-color: var(--color-green);
   border: 1px solid var(--color-white);
   text-align: center;
-  width: 360px;
-  height: 300px;
+  align-items: center;
+  width: 40vw;
+  height: 40vh;
   padding: 30px 0;
   margin: 40px 0;
 }
